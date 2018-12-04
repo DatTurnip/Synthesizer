@@ -7,8 +7,9 @@
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingRight="16dp"
     android:paddingTop="16dp"
+
     tools:context=".SynthesizerActivity">
 
     <TextView
@@ -16,12 +17,19 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
-    <TextView
+    <Button
         android:id="@+id/button1"
-        android:layout_width="108dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="111dp"
         android:text="@string/button1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:text="@string/button2" />
 </RelativeLayout>
