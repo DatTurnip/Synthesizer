@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="111dp"
+        android:onClick="onButton1Click"
         android:text="@string/button1" />
 
     <Button
@@ -31,5 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="111dp"
+        android:onClick="onButton1Click"
         android:text="@string/button2" />
 </RelativeLayout>
