@@ -20,18 +20,12 @@ public class SynthesizerActivity extends AppCompatActivity {
 
         button1 = (Button)findViewById(R.id.button1);
         button2 = (Button)findViewById(R.id.button2);
-
-        button1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Log.i(TAG, "Button 1 Clicked");
-            }
-        });
-        button2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                Log.i(TAG, "Button 2 Clicked");
-
-            }
-        });
+        };
+@Override
+    public void onButton1Click( View v) {
+        Log.i (TAG, "Button 1 Clicked");
     }
-}
+
+            }
+
+

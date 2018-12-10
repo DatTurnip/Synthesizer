@@ -21,9 +21,8 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="111dp"
-        android:onClick="onButton1Click"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
         android:text="@string/button1" />
 
     <Button
