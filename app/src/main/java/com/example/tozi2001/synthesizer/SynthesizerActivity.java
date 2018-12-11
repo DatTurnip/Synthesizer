@@ -1,5 +1,6 @@
 package com.example.tozi2001.synthesizer;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,7 @@ public class SynthesizerActivity extends AppCompatActivity {
             SynthesizerActivity.class.getName();
     private Button button1;
     private Button button2;
+    private mpE = new MediaPlayer();
 
 
     @Override
@@ -20,12 +22,16 @@ public class SynthesizerActivity extends AppCompatActivity {
 
         button1 = (Button)findViewById(R.id.button1);
         button2 = (Button)findViewById(R.id.button2);
-        };
-@Override
+        }
+
     public void onButton1Click( View v) {
         Log.i (TAG, "Button 1 Clicked");
     }
+    public void onButton2Click(View v) {
+        Log.i (TAG, "Button 2 Clicked");
+    }
 
             }
+
 
 
