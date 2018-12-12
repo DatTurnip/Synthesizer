@@ -12,7 +12,9 @@ public class SynthesizerActivity extends AppCompatActivity {
             SynthesizerActivity.class.getName();
     private Button button1;
     private Button button2;
-    private mpE = new MediaPlayer();
+    private Button button3;
+    private MediaPlayer mpE;
+    private MediaPlayer mpF;
 
 
     @Override
@@ -22,13 +24,20 @@ public class SynthesizerActivity extends AppCompatActivity {
 
         button1 = (Button)findViewById(R.id.button1);
         button2 = (Button)findViewById(R.id.button2);
+        button3 = (Button)findViewById(R.id.button3);
+        mpE = MediaPlayer.create(this, R.raw.scalee);
+        mpF = MediaPlayer.create(this, R.raw.scalef);
         }
 
     public void onButton1Click( View v) {
-        Log.i (TAG, "Button 1 Clicked");
+        mpE.seekTo(0);
+        Log.e (TAG, "Button 1 Clicked");
+        mpE.start();
     }
     public void onButton2Click(View v) {
-        Log.i (TAG, "Button 2 Clicked");
+        mpF.seekTo(0);
+        Log.e (TAG, "Button 2 Clicked");
+        mpF.start();
     }
 
             }

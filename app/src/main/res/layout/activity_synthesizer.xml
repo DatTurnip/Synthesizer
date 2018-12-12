@@ -22,20 +22,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="17dp"
-        android:layout_marginTop="99dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginEnd="100dp"
         android:onClick="onButton1Click"
-        android:text="@string/button1" />
+        android:text="@string/button1"
+        tools:text="Scale E" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="-149dp"
-        android:layout_marginStart="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="86dp"
         android:onClick="onButton2Click"
-        android:text="@string/button2" />
+        android:text="@string/button2"
+        tools:text="Scale F" />
 </RelativeLayout>
