@@ -21,22 +21,31 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/button2"
-        android:layout_marginEnd="100dp"
+        android:layout_toEndOf="@+id/button3"
         android:onClick="onButton1Click"
         android:text="@string/button1"
-        tools:text="Scale E" />
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="86dp"
+        android:layout_marginTop="121dp"
+        android:layout_toStartOf="@+id/button3"
         android:onClick="onButton2Click"
         android:text="@string/button2"
-        tools:text="Scale F" />
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:onClick="onButton3Click"
+        android:text="@string/button3"
+        android:visibility="visible" />
 </RelativeLayout>
