@@ -17,7 +17,6 @@ public class SynthesizerActivity extends AppCompatActivity {
     private MediaPlayer mpF;
     private MediaPlayer mpMC;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
