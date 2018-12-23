@@ -13,9 +13,13 @@ public class SynthesizerActivity extends AppCompatActivity {
     private Button button1;
     private Button button2;
     private Button button3;
+    private Button button4;
+    private Button button5;
     private MediaPlayer mpE;
-    private MediaPlayer mpF;
+    private MediaPlayer mpKnight;
     private MediaPlayer mpMC;
+    private MediaPlayer mpFalcon;
+    private MediaPlayer mpPaul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +29,14 @@ public class SynthesizerActivity extends AppCompatActivity {
         button1 = (Button)findViewById(R.id.button1);
         button2 = (Button)findViewById(R.id.button2);
         button3 = (Button)findViewById(R.id.button3);
+        button4 = (Button)findViewById(R.id.button4);
+        button5 = (Button)findViewById(R.id.button5);
         mpE = MediaPlayer.create(this, R.raw.scalee);
-        mpF = MediaPlayer.create(this, R.raw.scalef);
+        mpKnight = MediaPlayer.create(this, R.raw.heko);
         mpMC = MediaPlayer.create(this, R.raw.classic_hurt_1_);
+        mpFalcon = MediaPlayer.create(this, R.raw.showmeyamoves);
+        mpPaul = MediaPlayer.create(this, R.raw.hiimpaul);
+
         }
 
     public void onButton1Click( View v) {
@@ -36,15 +45,24 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpE.start();
     }
     public void onButton2Click(View v) {
-        mpF.seekTo(0);
+        mpKnight.seekTo(0);
         Log.e (TAG, "Button 2 Clicked");
-        mpF.start();
+        mpKnight.start();
     }
     public void onButton3Click(View v) {
         mpMC.seekTo(0);
         Log.e (TAG, "Button 3 Clicked");
         mpMC.start();
-
+    }
+    public void onButton4Click(View v) {
+        mpFalcon.seekTo(0);
+        Log.e (TAG, "Button 4 Clicked");
+        mpFalcon.start();
+    }
+    public void onButton5Click (View v) {
+        mpPaul.seekTo(0);
+        Log.e (TAG, "Button 5 Clicked");
+        mpPaul.start();
     }
             }
 

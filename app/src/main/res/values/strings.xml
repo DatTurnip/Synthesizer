@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Synthesizer</string>
-    <string name="button1">button1</string>
-    <string name="button2">button2</string>
-    <string name="button3">button3</string>
+    <string name="E">button1</string>
+    <string name="FightMe">button2</string>
+    <string name="Minecraft">button3</string>
+    <string name="CaptainFalcon">button4</string>
+    <string name="Paul">button5</string>
+    <string name="minecraft">Minecraft</string>
+    <string name="e">E</string>
+    <string name="fight_me">Fight Me</string>
+    <string name="captain_falcon">Captain Falcon</string>
+    <string name="paul">Paul</string>
 </resources>
