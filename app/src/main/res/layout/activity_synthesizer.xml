@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingLeft="16dp"
+
     android:paddingTop="16dp"
     android:paddingRight="16dp"
-
     android:paddingBottom="16dp"
     tools:context=".SynthesizerActivity">
 
@@ -17,9 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onButton1Click"
-        android:text="@string/e"
-        android:visibility="visible"
-        tools:text="E" />
+        android:text="@string/bruh"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/button2"
@@ -28,8 +27,7 @@
         android:layout_weight="1"
         android:onClick="onButton2Click"
         android:text="@string/fight_me"
-        android:visibility="visible"
-        tools:text="Fight Me" />
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/button3"
@@ -38,8 +36,7 @@
         android:layout_weight="1"
         android:onClick="onButton3Click"
         android:text="@string/minecraft"
-        android:visibility="visible"
-        tools:text="Minecraft" />
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/button4"
@@ -48,8 +45,7 @@
         android:layout_weight="1"
         android:onClick="onButton4Click"
         android:text="@string/captain_falcon"
-        android:visibility="visible"
-        tools:text="Captain Falcon" />
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/button5"
@@ -58,7 +54,15 @@
         android:layout_weight="1"
         android:onClick="onButton5Click"
         android:text="@string/paul"
-        android:visibility="visible"
-        tools:text="Paul" />
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton6Click"
+        android:text="@string/mario"
+        android:visibility="visible" />
 
 </LinearLayout>
