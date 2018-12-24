@@ -6,10 +6,12 @@
     <string name="CaptainFalcon">button4</string>
     <string name="Paul">button5</string>
     <string name="Mario">button6</string>
+    <string name="NotAtAll">button7</string>
     <string name="minecraft">Minecraft</string>
     <string name="bruh">bruh</string>
     <string name="fight_me">Fight Me</string>
     <string name="captain_falcon">Captain Falcon</string>
     <string name="paul">Paul</string>
     <string name="mario">Mario</string>
+    <string name="not_at_all">Not At All</string>
 </resources>
