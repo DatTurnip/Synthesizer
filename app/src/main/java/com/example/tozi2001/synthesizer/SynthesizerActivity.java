@@ -17,6 +17,7 @@ public class SynthesizerActivity extends AppCompatActivity {
     private Button button5;
     private Button button6;
     private Button button7;
+    private Button button8;
     private MediaPlayer mpB;
     private MediaPlayer mpKnight;
     private MediaPlayer mpMC;
@@ -24,6 +25,8 @@ public class SynthesizerActivity extends AppCompatActivity {
     private MediaPlayer mpPaul;
     private MediaPlayer mpMario;
     private MediaPlayer mpS;
+    private MediaPlayer mpI;
+    private MediaPlayer mpST;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,7 @@ public class SynthesizerActivity extends AppCompatActivity {
         button5 = (Button)findViewById(R.id.button5);
         button6 = (Button)findViewById(R.id.button6);
         button7 = (Button)findViewById(R.id.button7);
+        button8 = (Button)findViewById(R.id.button8);
         mpB = MediaPlayer.create(this, R.raw.broski);
         mpKnight = MediaPlayer.create(this, R.raw.heko);
         mpMC = MediaPlayer.create(this, R.raw.classic_hurt_1_);
@@ -44,6 +48,8 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpPaul = MediaPlayer.create(this, R.raw.hiimpaul);
         mpMario = MediaPlayer.create( this, R.raw.maria);
         mpS = MediaPlayer.create(this, R.raw.sponch);
+        mpI = MediaPlayer.create(this, R.raw.ifight4myfriends);
+        mpST = MediaPlayer.create(this, R.raw.sport);
 
 
         }
@@ -82,6 +88,14 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpS.seekTo(0);
         Log.e (TAG, "Button 7 Clicked");
         mpS.start();
+    }
+    public void onButton8Click (View v) {
+        mpI.seekTo(0);
+        Log.e (TAG, "Button 8 Clicked");
+        mpI.start();
+        mpST.seekTo(0);
+        Log.e (TAG, "Button 8 Clicked");
+        mpST.start();
     }
             }
 

@@ -75,4 +75,14 @@
         android:visibility="visible"
         tools:text="Not At All" />
 
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton8Click"
+        android:text="@string/ike"
+        android:visibility="visible"
+        tools:text="Ike" />
+
 </LinearLayout>
