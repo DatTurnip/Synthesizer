@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class SynthesizerActivity extends AppCompatActivity {
+
+    private final int WHOLE_NOTE = 1000;
     private static final String TAG =
             SynthesizerActivity.class.getName();
     private Button button1;
@@ -18,6 +20,9 @@ public class SynthesizerActivity extends AppCompatActivity {
     private Button button6;
     private Button button7;
     private Button button8;
+    private Button button9;
+    private Button button10;
+
     private MediaPlayer mpB;
     private MediaPlayer mpKnight;
     private MediaPlayer mpMC;
@@ -26,7 +31,8 @@ public class SynthesizerActivity extends AppCompatActivity {
     private MediaPlayer mpMario;
     private MediaPlayer mpS;
     private MediaPlayer mpI;
-    private MediaPlayer mpST;
+    private MediaPlayer mpV;
+    private MediaPlayer mpH;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +47,9 @@ public class SynthesizerActivity extends AppCompatActivity {
         button6 = (Button)findViewById(R.id.button6);
         button7 = (Button)findViewById(R.id.button7);
         button8 = (Button)findViewById(R.id.button8);
+        button9 = (Button)findViewById(R.id.button9);
+        button10 = (Button)findViewById(R.id.button10);
+
         mpB = MediaPlayer.create(this, R.raw.broski);
         mpKnight = MediaPlayer.create(this, R.raw.heko);
         mpMC = MediaPlayer.create(this, R.raw.classic_hurt_1_);
@@ -49,9 +58,8 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpMario = MediaPlayer.create( this, R.raw.maria);
         mpS = MediaPlayer.create(this, R.raw.sponch);
         mpI = MediaPlayer.create(this, R.raw.ifight4myfriends);
-        mpST = MediaPlayer.create(this, R.raw.sport);
-
-
+        mpV = MediaPlayer.create(this, R.raw.vuhmentoid);
+        mpH = MediaPlayer.create(this, R.raw.hungie);
         }
 
     public void onButton1Click( View v) {
@@ -93,9 +101,16 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpI.seekTo(0);
         Log.e (TAG, "Button 8 Clicked");
         mpI.start();
-        mpST.seekTo(0);
-        Log.e (TAG, "Button 8 Clicked");
-        mpST.start();
+    }
+    public void onButton9Click (View v) {
+        mpV.seekTo(0);
+        Log.e (TAG, "Button 9 Clicked");
+        mpV.start();
+    }
+    public void onButton10Click (View v) {
+        mpH.seekTo(0);
+        Log.e (TAG, "Button 10 Clicked");
+        mpH.start();
     }
             }
 

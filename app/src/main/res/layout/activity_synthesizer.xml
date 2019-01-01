@@ -85,4 +85,24 @@
         android:visibility="visible"
         tools:text="Ike" />
 
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton9Click"
+        android:text="@string/vuhmentoid"
+        android:visibility="visible"
+        tools:text="Vuhmentoid" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton10Click"
+        android:text="@string/hungry_pumpkin"
+        android:visibility="visible"
+        tools:text="Hungry Pumpkin" />
+
 </LinearLayout>
