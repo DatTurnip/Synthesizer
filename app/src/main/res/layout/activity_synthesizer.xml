@@ -3,11 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
+    android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
 
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context=".SynthesizerActivity">
 
     <Button
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onButton1Click"
-        android:text="@string/button1"
+        android:text="@string/bruh"
         android:visibility="visible" />
 
     <Button
@@ -25,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onButton2Click"
-        android:text="@string/button2"
+        android:text="@string/fight_me"
         android:visibility="visible" />
 
     <Button
@@ -34,13 +35,74 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onButton3Click"
-        android:text="@string/button3"
+        android:text="@string/minecraft"
         android:visibility="visible" />
 
-    <TextView
+    <Button
+        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Hello World!" />
+        android:onClick="onButton4Click"
+        android:text="@string/captain_falcon"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton5Click"
+        android:text="@string/paul"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton6Click"
+        android:text="@string/mario"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton7Click"
+        android:text="@string/not_at_all"
+        android:visibility="visible"
+        tools:text="Not At All" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton8Click"
+        android:text="@string/ike"
+        android:visibility="visible"
+        tools:text="Ike" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton9Click"
+        android:text="@string/vuhmentoid"
+        android:visibility="visible"
+        tools:text="Vuhmentoid" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton10Click"
+        android:text="@string/hungry_pumpkin"
+        android:visibility="visible"
+        tools:text="Hungry Pumpkin" />
 
 </LinearLayout>
