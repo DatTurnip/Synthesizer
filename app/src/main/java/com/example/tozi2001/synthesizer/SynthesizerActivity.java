@@ -22,6 +22,7 @@ public class SynthesizerActivity extends AppCompatActivity {
     private Button button8;
     private Button button9;
     private Button button10;
+    private Button button11;
 
     private MediaPlayer mpB;
     private MediaPlayer mpKnight;
@@ -49,6 +50,7 @@ public class SynthesizerActivity extends AppCompatActivity {
         button8 = (Button)findViewById(R.id.button8);
         button9 = (Button)findViewById(R.id.button9);
         button10 = (Button)findViewById(R.id.button10);
+        button11 = (Button)findViewById(R.id.button11);
 
         mpB = MediaPlayer.create(this, R.raw.broski);
         mpKnight = MediaPlayer.create(this, R.raw.heko);
@@ -61,7 +63,13 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpV = MediaPlayer.create(this, R.raw.vuhmentoid);
         mpH = MediaPlayer.create(this, R.raw.hungie);
         }
-
+    private void delayPlaying(int delay) {
+        try {
+            Thread.sleep(delay);
+        } catch (InterruptedException e) {
+            Log.e("SynthesizerActivity","Audioo playback interrupted");
+        }
+    }
     public void onButton1Click( View v) {
         mpB.seekTo(0);
         Log.e (TAG, "Button 1 Clicked");

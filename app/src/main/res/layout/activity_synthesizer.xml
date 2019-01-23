@@ -104,5 +104,15 @@
         android:text="@string/hungry_pumpkin"
         android:visibility="visible"
         tools:text="Hungry Pumpkin" />
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onButton11Click"
+        android:text="@string/CH1"
+        android:visibility="visible"
+        tools:text="CH1"
+        />
 
 </LinearLayout>
